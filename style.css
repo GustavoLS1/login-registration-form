@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #97ebe1, rgba(70, 120, 90, 0.7));
+    background: linear-gradient(180deg, #d7ebe1, rgba(70, 120, 90, 0.7));
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -112,6 +112,7 @@ body {
 
 .form-container .slide-up .form-title {
     font-size: 16px;
+    cursor: pointer;
 }
 
 .login-container {
@@ -125,6 +126,10 @@ body {
     transition: 0.3s ease;
 }
 
+.form-container .login-container.slide-up {
+    top: 90%;
+}
+
 .login-container::before {
     content: '';
     position: absolute;
@@ -134,7 +139,7 @@ body {
     border-radius: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-    top: -20%;
+    top: -20px;
     z-index: 4;
     transition: 0.3ms ease;
 }
@@ -149,3 +154,39 @@ body {
     text-align: center;
     transition: 0.3s ease;
 }
+
+.form-container .login-container.slide-up .login-wrapper {
+    top: 10%;
+    transform: translate(-50%, 0);
+}
+
+.form-container .login-container .form-title {
+    color: #000;
+}
+
+.form-container .login-container.slide-up .form-title {
+    margin: 0;
+}
+
+.form-container .login-container .form-holder {
+    border: 1px solid #eee;  
+}
+
+.form-container .login-container .submit-btn {
+    margin-bottom: 10px;
+}
+
+.form-container a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #3db077;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
