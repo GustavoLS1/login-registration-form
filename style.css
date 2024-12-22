@@ -106,5 +106,46 @@ body {
 }
 
 .form-container .slide-up .form-holder, .form-container .slide-up.submit-btn {
+    opacity: 0;
+    visibility: hidden;
+}
 
+.form-container .slide-up .form-title {
+    font-size: 16px;
+}
+
+.login-container {
+    background-color: #fff;
+    z-index: 5;
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 200%;
+    height: 250px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -20%;
+    z-index: 4;
+    transition: 0.3ms ease;
+}
+
+.form-container .login-wrapper {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    text-align: center;
+    transition: 0.3s ease;
 }
